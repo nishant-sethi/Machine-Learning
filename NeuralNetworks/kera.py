@@ -177,4 +177,4 @@ results = pd.Series(results,name="Label")
 
 '''save the file'''
 submission = pd.concat([pd.Series(range(1,28001),name = "ImageId"),results],axis = 1)
-submission.to_csv("C:\\Users\\nishant.sethi\\Desktop\\cnn_mnist_v2_datagen.csv",index=False)
+submission.to_csv("PATH/cnn_mnist_v2_datagen.csv",index=False)
