@@ -83,43 +83,6 @@ def gradient_descent(alpha,ep=0.0001, max_iter=1500):
                             x[i][k]=1
                         if x[i][k]<0:
                             x[i][k]=0
-                    
-                    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-#         a=0
-#         for i in range(0,m[0]):
-#             for j in range(0,m[1]):
-# #                 print(theta[i])
-# #                 print(p[i][j])
-# #                 print(y[i][j])
-#                 a=theta[0][j]*x[0][j]+theta[1][j]*x[1][j]
-#                 a=a-y[i][j]
-#                 #a=sum(theta[i]*(p[i][j]-y[i][j]))
-#                 grad[i][j]=a
-#         
-#         '''update the theta_temp'''
-# #         temp0 = t0 - alpha * grad0
-# #         temp1 = t1 - alpha * grad1
-#         for i in range(0,m[0]):
-#             for j in range(0,m[1]):
-#                 temp[i][j]=theta[i][j]-alpha*grad[i][j]   
-#         '''update theta'''
-# #         t0 = temp0
-# #         t1 = temp1
         theta=temp
         '''mean squared error'''
         e = compute_cost_function(nm,nu, theta, x, y,r)
